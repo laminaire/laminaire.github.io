@@ -23,48 +23,6 @@
            font-style: normal;
     }
 
-    /*------------Overlay popup------------*/
-    .overlay {
-      /* SET BACKGROUND COLOR */
-      background-color: #ffffff;
-      /* SET BACKGROUND SIZE */
-      background-size: 100%;
-      position: fixed;
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-      background-position: center;
-      background-repeat: no-repeat;
-      overflow: hidden;
-    }
-    .videoembed {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      /*z-index: -99;
-      width: 100%; */
-      height: 100%;
-      background: #fff;
-    }
-    /* If you want to include the title... */
-    .overlay-title {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      text-align: center;
-      box-sizing:border-box;
-      cursor: pointer;
-    }
-    .overlay-title h1 {
-      color: #fff;
-      font-size: 1.2rem;
-      background: rgba(0,0,0,0.5);
-      padding: 1em 1.2em;
-    }
-
     /*------------Body definitions------------*/
     body{
       font-family: Brandon-Light, sans-serif !important;
@@ -73,7 +31,6 @@
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       font-family: FiraSans-Light, sans-serif !important;
 	  text-transform: uppercase;
-      color: #000;
       font-family: FiraSans-Light;
       font-style: normal;
       font-weight: 400;
@@ -96,90 +53,69 @@
     </style>
   </head>
   <body class="d-flex h-100" style="color: #000;background: #fff;">
-	  <div id="myCarousel" class="carousel slide mb-6 w-100 h-100" data-bs-ride="carousel" data-bs-theme="dark">
-		<div class="carousel-indicators">
-		  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		  <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
-		  <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
-		</div>
-		<div class="carousel-inner w-100 h-100">
-		  <div class="w-100 h-100 carousel-item active">
-			<img src="resources/cover.jpg" width="100%" height="100%" class="carousel-img" focusable="false">
-			<div class="container">
-			  <div class="carousel-caption text-start" style="top:45%;">
-				<h1>Laminaire</h1>
-				<p>A new dimension to indoor air quality</p>
-			  </div>
-			</div>
-		  </div>
-		  <!-- <div class="w-100 h-100 carousel-item"> -->
-			<!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-			<!-- <div class="container"> -->
-			  <!-- <div class="carousel-caption"> -->
-				<!-- <h1>Another example headline.</h1> -->
-				<!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
-				<!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-		  <!-- </div> -->
-		  <!-- <div class="w-100 h-100 carousel-item"> -->
-			<!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-			<!-- <div class="container"> -->
-			  <!-- <div class="carousel-caption text-end"> -->
-				<!-- <h1>One more for good measure.</h1> -->
-				<!-- <p>Some representative placeholder content for the third slide of this carousel.</p> -->
-				<!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
-			  <!-- </div> -->
-			<!-- </div> -->
-		  <!-- </div> -->
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</button>
-	  </div>
-		  
-        <!-- <div class="mb-auto"></div> -->
-        <!-- <div> -->
-            <!-- <img id="imgTitle" src="resources/gallery_title.png" class="mx-auto d-block pb-3 mb-5" alt="..." width="500"> -->
-            <!-- <h4>21 July - 6 August 2023</h4> -->
-            <!-- <h4>12pm - 8pm</h4> -->
-            <!-- <h4>Kult Studio & Gallery<br> -->
-              <!-- 409 Race Course Rd,<br> -->
-              <!-- #03-01A, Singapore 218657 -->
-            <!-- </h4> -->
-        <!-- </div> -->
-        <!-- <div class="mt-auto"> -->
-          <!-- <img id="downBtn" src="resources/down.svg" class="mx-auto d-block mb-5" alt="..." width="50"> -->
-        <!-- </div> -->
+	  
+  <div id="myCarousel" class="h-100 w-100 carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="dark">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="h-100 carousel-inner">
+      <div class="h-100 carousel-item active">
+        <img class="carousel-img" width="100%" height="100%" src="resources/cover.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-start" style="top:45%;">
+            <h1>Intake</h1>
+            <p>A window-mounted airflow<br> regulator that intelligently<br> draws filtered air indoors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 carousel-item">
+        <img class="carousel-img" width="100%" height="100%" src="resources/9.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-end" style="color: #fff; top:45%; bottom:auto;">
+            <p>Sensors detect and judge how much air<br> should be drawn indoors to get the most<br> optimal air quality</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 carousel-item">
+        <img class="carousel-img" width="100%" height="100%" src="resources/10.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption" style="color: #fff; top:1.25rem; bottom:auto;">
+            <p>Filters prevent micro-particulates from entering the room when air is drawn from outside</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 carousel-item">
+        <img class="carousel-img" width="100%" height="100%" src="resources/11.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-end" style="color: #fff;">
+            <p>2-directional splash-proofing design that allows the unit to be mounted both horizontally for hung windows and vertically for sliding windows</p>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 carousel-item">
+        <img class="carousel-img" width="100%" height="100%" src="resources/12.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-end" style="color: #fff; top:1.25rem; bottom:auto;">
+            <p>Easily replaceable parts improve <br>the sustainability of the product</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <!-- <div id="about" class="container text-center"> -->
-        <!-- <h1 style="padding: 20%; margin: 0;">Programmes</h1> -->
-        <!-- <article class="row pb-5 mb-5"> -->
-          <!-- <img src="resources/gallery_title.png" class="img-fluid col-md-6 mx-auto"> -->
-          <!-- <h2 class="py-5 my-5"> -->
-            <!-- Programme Title<br> -->
-            <!-- Date<br> -->
-            <!-- Time -->
-          <!-- </h2> -->
-          <!-- <p class="col-md-8 mx-auto"> -->
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec pharetra neque. Etiam vel massa vel lectus feugiat sodales eget in neque. Donec quis lectus metus. Quisque purus leo, semper vel sapien eget, porta vehicula ligula. Sed ut dapibus leo. Vestibulum et rutrum nunc. Ut fermentum lacus leo. Mauris diam mauris, elementum vulputate iaculis in, suscipit quis leo. -->
-          <!-- </p> -->
-        <!-- </article> -->
-      <!-- </div> -->
 
-      <!-- <div class="single-page container text-center"> -->
-        <!-- <div class="row h-100 my-auto"> -->
-          <!-- <div class="mx-auto col-md-8 align-self-center"> -->
-            <!-- <h1 class="my-5">About</h1> -->
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec pharetra neque. Etiam vel massa vel lectus feugiat sodales eget in neque. Donec quis lectus metus. Quisque purus leo, semper vel sapien eget, porta vehicula ligula. Sed ut dapibus leo. Vestibulum et rutrum nunc. Ut fermentum lacus leo. Mauris diam mauris, elementum vulputate iaculis in, suscipit quis leo.</p> -->
-          <!-- </div> -->
-        <!-- </div> -->
-      <!-- </div> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript">
