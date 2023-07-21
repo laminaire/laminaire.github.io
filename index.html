@@ -24,36 +24,88 @@
     }
 
     /*------------Body definitions------------*/
+	.nav-bg{
+	  background: rgb(0,0,0);
+	  background: linear-gradient(180deg, rgb(0 0 0 / 75%) 0%, rgba(0,0,0,0.6498248957786239) 60%, rgb(0 0 0 / 60%) 100%);
+	}
+	
     body{
       font-family: Brandon-Light, sans-serif !important;
       font-size: 1.6rem;
     }
     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
       font-family: FiraSans-Light, sans-serif !important;
-	  text-transform: uppercase;
       font-family: FiraSans-Light;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
+	.h1, .h2, h1, h2 {
+	  text-transform: uppercase;
+	}
     .carousel-img{
       object-fit: cover;
     }
-
-    .sns-img{
-      width: 40px;
-    }
-    .sns-link{
-      filter: invert(100%) sepia(1%) saturate(1718%) hue-rotate(278deg) brightness(114%) contrast(100%);
-      margin: 0.5em;
-    }
-    .sns-link:hover{
-      filter: invert(50%) sepia(66%) saturate(1289%) hue-rotate(94deg) brightness(121%) contrast(111%);
-    }
+	
+	#header-bg{
+      background-image: url(resources/cover.jpg);
+	  background-size: cover;
+	  background-position: center;
+	}
+	.header-text-box{
+		background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0) 100%);
+	}
+	
+	#bg-1{
+      flex: 1;
+	  height: 500px;
+	  background-image: url(resources/9.jpg);
+	  background-size: cover;
+	  background-position: center;
+	}
+	#bg-2{
+      flex: 1;
+	  height: 500px;
+      background-image: url(resources/10.jpg);
+	  background-size: cover;
+	  background-position: center;
+	}
+	#bg-3{
+      flex: 1;
+	  height: 500px;
+      background-image: url(resources/11.jpg);
+	  background-size: cover;
+	  background-position: center;
+	}
+	#bg-4{
+      flex: 1;
+	  height: 500px;
+      background-image: url(resources/12.jpg);
+	  background-size: cover;
+	  background-position: center;
+	}
+	
+	.feature-text-box{
+		background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6498248957786239) 60%, rgba(0,0,0,0) 100%);
+	}
+	.text-float-right{
+      width: 50%;
+	  float: right;
+	}
+	.text-center-bottom{
+		/*Must be child of a relative parent*/
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+	}
     </style>
   </head>
-  <body class="d-flex h-100" style="color: #000;background: #fff;">
-	  
+  <body><!-- class="d-flex h-100" style="color: #000;background: #fff;">
+	<!--nav class="navbar fixed-top navbar-dark nav-bg">
+	  <a class="navbar-brand" href="#">Laminaire</a>
+	</nav>  
   <div id="myCarousel" class="h-100 w-100 carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="dark">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,7 +120,7 @@
         <div class="container">
           <div class="carousel-caption text-start" style="top:45%;">
             <h1>Intake</h1>
-            <p>A window-mounted airflow<br> regulator that intelligently<br> draws filtered air indoors.</p>
+            <p>A window-mounted airflow regulator that intelligently draws filtered air indoors.</p>
           </div>
         </div>
       </div>
@@ -76,7 +128,7 @@
         <img class="carousel-img" width="100%" height="100%" src="resources/9.JPG" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <div class="container">
           <div class="carousel-caption text-end" style="color: #fff; top:45%; bottom:auto;">
-            <p>Sensors detect and judge how much air<br> should be drawn indoors to get the most<br> optimal air quality</p>
+            <p>Sensors detect and judge how much air should be drawn indoors to get the most optimal air quality</p>
           </div>
         </div>
       </div>
@@ -113,9 +165,96 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div-->
+<main>
+  <div id="header-bg" class="position-relative overflow-hidden p-3 p-md-5 mb-3 m-md-0 text-center bg-body-tertiary">
+    <div class="header-text-box col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Intake</h1>
+      <h3 class="text-muted mb-3">A window-mounted airflow regulator that intelligently draws filtered air indoors.</h3>
+      <!--div class="d-flex gap-3 justify-content-center lead fw-normal">
+		  <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+			About
+		  </button>
+      </div-->
+    </div>
   </div>
 
+  <div class="d-md-flex flex-md-equal w-100 my-md-4 ps-md-4">
+    <div id="bg-1" class="text-bg-dark me-md-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden border-bottom">
+      <div class="my-3 py-3 feature-text-box text-float-right">
+        <!-- <h2 class="display-5">Another headline</h2> -->
+        <p class="lead">Sensors detect and judge how much air should be drawn indoors to get the most optimal air quality</p>
+      </div>
+    </div>
+    <div id="bg-2" class="text-bg-dark me-md-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden border-bottom">
+      <div class="my-3 p-3 feature-text-box">
+        <!-- <h2 class="display-5">Another headline</h2> -->
+        <p class="lead">Filters prevent micro-particulates from entering the room when air is drawn from outside</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="d-md-flex flex-md-equal w-100 my-md-4 ps-md-4">
+    <div id="bg-3" style="position:relative" class="text-bg-dark me-md-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden border-bottom">
+      <div class="my-3 p-3 feature-text-box text-center-bottom">
+        <!-- <h2 class="display-5">Another headline</h2> -->
+        <p class="lead">2-directional splash-proofing design that allows the unit to be mounted both horizontally for hung windows and vertically for sliding windows</p>
+      </div>
+    </div>
+    <div id="bg-4" class="text-bg-dark me-md-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden border-bottom">
+      <div class="my-3 py-3 feature-text-box text-float-right">
+        <!-- <h2 class="display-5">Another headline</h2> -->
+        <p class="lead">Easily replaceable parts improve <br>the sustainability of the product</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-body-secondary">© 2023 Laminaire</small>
+    </div>
+    <!--div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Cool stuff</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Random feature</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Team feature</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Stuff for developers</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Another one</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Resource name</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Resource</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Another resource</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Business</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Education</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Government</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Team</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Locations</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Privacy</a></li>
+        <li><a class="link-secondary text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/product/#">Terms</a></li>
+      </ul>
+    </div-->
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript">
